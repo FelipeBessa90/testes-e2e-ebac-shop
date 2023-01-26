@@ -1,0 +1,42 @@
+[
+    {
+        "nome": "Ana",
+        "sobrenome": "Lucia",
+        "empresa": "De leve",
+        "endereco": "rua da Silva",
+        "numero": "5000",
+        "pais": "Brasil",
+        "cidade": "Sorocaba",
+        "estado": "São Paulo",
+        "cep": "05594-003",
+        "celular": "11-999898-9898",
+        "email": "analucia@live.com"
+    },
+    {
+        "nome": "felipe",
+        "sobrenome": "bessa",
+        "empresa": "De leve ltda",
+        "endereco": "rua dos Santos",
+        "numero": "1000",
+        "pais": "Brasil",
+        "cidade": "Santos",
+        "estado": "São Paulo",
+        "cep": "05594-005",
+        "celular": "11-999898-9797",
+        "email": "felipebessa@live.com"
+    },
+    {
+        "nome": "Paulo",
+        "sobrenome": "Santos",
+        "empresa": "De leve ME LTDA",
+        "endereco": "rua Santa Efigenia",
+        "numero": "900",
+        "pais": "Brasil",
+        "cidade": "São Paulo",
+        "estado": "São Paulo",
+        "cep": "05594-008",
+        "celular": "11-999898-9696",
+        "email": "Paulo.Santos@live.com"
+    }
+]
+    
