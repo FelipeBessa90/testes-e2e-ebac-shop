@@ -18,7 +18,7 @@
   },
   "homepage": "https://github.com/FelipeBessa90/teste-ebac-ui#readme",
   "devDependencies": {
-    "cypress": "^11.2.0"
+    "cypress": "^12.4.0"
   },
   "dependencies": {
     "chance": "^1.1.8",

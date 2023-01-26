@@ -20,8 +20,6 @@ context('Exercicio - Testes End-to-end - Fluxo de pedido', () => {
     });
 
     it('Deve fazer um pedido na loja Ebac Shop de ponta a ponta', () => {
-        var quantidade = 2
-        //var Tamanho = M
         cy.fixture('perfil').then((dados) => {
             cy.get('#username').type(dados.usuario)
             cy.get('#password').type(dados.senha)
@@ -41,11 +39,9 @@ context('Exercicio - Testes End-to-end - Fluxo de pedido', () => {
                 dadosEndereco[1].celular,
                 dadosEndereco[1].email)
             cy.get('#primary-menu > .menu-item-629 > a').click()
-            cy.get('[class="product-block grid"]').eq(1).click()
-            cy.get('.button-variable-item-M').click()
-            cy.get('.button-variable-item-Green').click()
-            cy.get('.input-text').clear().type(quantidade)
-            cy.get('.single_add_to_cart_button').click()
+
+            cy.addProdutos('Abominable Hoodie', 'M', 'Red', 5)
+            
             cy.get('.woocommerce-message > .button').click()
             cy.get('.checkout-button').click()
             cy.get('#terms').click().type('{enter}')
