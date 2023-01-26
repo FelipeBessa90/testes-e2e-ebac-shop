@@ -39,11 +39,9 @@ context('Exercicio - Testes End-to-end - Fluxo de pedido', () => {
                 dadosEndereco[1].estado,
                 dadosEndereco[1].cep,
                 dadosEndereco[1].celular,
-                dadosEndereco[1].email
-            )
+                dadosEndereco[1].email)
             cy.get('#primary-menu > .menu-item-629 > a').click()
-            cy.get('[class="product-block grid"]')
-                .eq(1).click()
+            cy.get('[class="product-block grid"]').eq(1).click()
             cy.get('.button-variable-item-M').click()
             cy.get('.button-variable-item-Green').click()
             cy.get('.input-text').clear().type(quantidade)
@@ -51,14 +49,7 @@ context('Exercicio - Testes End-to-end - Fluxo de pedido', () => {
             cy.get('.woocommerce-message > .button').click()
             cy.get('.checkout-button').click()
             cy.get('#terms').click().type('{enter}')
-      
-            
             cy.get('.woocommerce-notice').should('contain', 'Obrigado. Seu pedido foi recebido.')
-
         })
-
-
     })
-
-
 })
